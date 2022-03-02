@@ -702,7 +702,9 @@ tab6 = html.Div([
     Output('ubiqugraph', 'figure'), 
     [Input('showubiqu', 'n_clicks_timestamp')])
 def update_stat_table(click):
-    
+    '''
+    create diversity-ubiquity plot
+    '''
     bipartdegrees = nx.degree(nxgraph1)
 
     #for diselem in nxgraphgenes.nodes:
